@@ -1,0 +1,11 @@
+package main
+
+var a int = 0
+
+func f(x int) int {
+	return x + a
+}
+
+func main() {
+	a = f(1)
+}

@@ -1,0 +1,15 @@
+package main
+
+func main() {
+	var x, y int
+	x = 1
+	y = 2
+	{
+		var x int
+		x = 10
+		y = 20
+	}
+	if x + y != 21 {
+		panic(1)
+	}
+}
